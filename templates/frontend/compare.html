@@ -1,0 +1,494 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+
+{% block title %}
+Compare Page
+{% endblock %}
+
+{% block content %}
+<div class="page-heading">
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            <li class="home"> <a href="index-2.html" title="Go to Home Page">Home</a> <span>&rsaquo; </span>
+            </li>
+            <li class="category1599"> <a href="grid.html" title="">New Car</a> <span>&rsaquo; </span> </li>
+            <li class="category1600"> <a href="grid.html" title="">Audi</a> <span>&rsaquo; </span> </li>
+            <li class="category1601"> <strong>Sedans</strong> </li>
+          </ul>
+        </div>
+        <!--col-xs-12-->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
+  </div>
+  <div class="page-title">
+    <h2>Compare Cars</h2>
+  </div>
+</div>
+
+
+<!-- BEGIN Main Container -->
+
+<div class="main-container col1-layout wow bounceInUp animated animated" style="visibility: visible;">
+
+  <div class="main">
+    <div class="container">
+      <div class="b-compare-images">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-12 col-md-offset-3">
+            <div>
+              <h3>New 2019 Audi A6 2.0</h3>
+              <img src="{% static 'frontend/products-images/p48.jpg' %}" alt="image">
+              <div class="b-compare-price">
+                <div class="b-compare__images-item-price-vs">vs</div>$90,600
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12 ">
+            <div>
+              <h3>2019 Porsche Cayenne</h3>
+              <img src="{% static 'frontend/products-images/p47.jpg' %}" alt="image">
+              <div class="b-compare-price">
+                <div class="b-compare__images-item-price-vs">vs</div>$52,650
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div>
+              <h3>Hyundai EON 2019</h3>
+              <img src="{% static 'frontend/products-images/p49.jpg' %}" alt="image">
+              <div class="b-compare-price">$120,440</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-compare-block">
+        <h2 style="background: #50b2fc;">Basic Information</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Make / Year
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              New 2019 Audi A6 2.0
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              2019 Porsche Cayenne
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Hyundai EON 2019
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Front Head Room
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              39.5 in
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              38.0 in
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              37.9 in
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Width / Height / Length
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              74.8 in / 57.3 in / 201.9 in
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              73.0 in / 57.0 in / 192.5 in
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              56.4 in / 73.8 in / 205.0 in
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Wheel Base
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              119.0 in
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              113.5 in
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              121.6 in
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Cargo capacity, all seats in place
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              15.2 cu.ft.
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              12.9 cu.ft.
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              13.0 cu.ft.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-compare-block">
+        <h2>MECHANICAL FEATURES</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Base Engine / Cylinders
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              5.0 L / V8
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              201 L / Inline 4
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              5.0 L / V8
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Fuel Capacity / Type
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              21.7 gal. / Flex-fuel
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              21.1 gal. / Diesel fuel
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              22.2 gal / Premium
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Fuel Economy (city / hwy)
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              15 / 23 mpg
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              28 / 42 mpg
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              19 / 23 mpg
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Horsepower
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              470 hp @ 6000 rpm
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              195 hp @ 3800 rpm
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              438 hp @ 6400 rpm
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Transmission
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              8-speed shiftable automatic
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              7-speed shiftable automatic
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Variable-speed automatic
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="b-compare-block">
+        <h2 style="background-color: #3e6274;">EXTERIOR / INTERIOR FEATURES</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              All Season Tires
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Optional
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Power Glass Sunroof
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Tire Size
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              275/35R20 102Y tires
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              245/45R17 tires
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              245/45R V tires
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Wheels
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Painted alloy wheels
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Alloy wheels
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Painted alloy wheels
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              A/C With Climate Control
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Built-in Hard Drive
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Optional
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              N / A
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              HD Radio
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-title">
+              Heated / Cooled Seats
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Optional
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="b-compare__block-inside-value">
+              Standard
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+  <!--main-container-->
+
+</div>
+<!--col1-layout-->
+
+
+
+
+
+<!-- For version 1,2,3,4,6 -->
+{% endblock %}
