@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from frontend.models import Seller_Product,Plan,User_plan,Category
 from django.core.exceptions import ObjectDoesNotExist
 
 # Create your views here.
@@ -13,7 +14,8 @@ def foreign(request):
     return render(request, 'frontend/grid.html')
 
 def nigerian(request):
-    return render(request, 'frontend/list.html')
+    lst = Seller_Product.objects.all().filter(category=1)
+    return render(request, 'frontend/list.html', {'lt':lst })
 
 def about(request):
     return render(request, 'frontend/about-us.html')
