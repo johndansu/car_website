@@ -1,7 +1,7 @@
 ﻿{% extends 'frontend/base.html' %}
 {% load static %}
 {% block title %}
- 404error
+ 
 {% endblock %}
 {% block content %}
  <div class="page-heading">
@@ -22,7 +22,7 @@
     <div class="std">
       <div class="page-not-found">
       <br>
-        <div><img src="images/404-img.jpg" alt="error image"></div>
+        <div><img src="{% static 'frontend/images/404-img.jpg' %}" alt="error image"></div>
         <h3>Oops! The Page you requested was not found!</h3>
         <div><a href="index-2.html" class="btn-home"><span>Back To Home</span></a></div>
       </div>

@@ -1,7 +1,7 @@
 {% extends 'frontend/base.html' %}
 {% load static %}
 {% block title %}
- Blog
+ 
 {% endblock %}
 {% block content %}
  <div class="page-heading">
@@ -60,7 +60,7 @@
                 <tbody>
                                     
 <tr class="first last odd">
-    <td class="image hidden-table"><a href="product-detail.html" title="Women&#39;s Georgette Animal Print" class="product-image"><img src="products-images/p8.jpg" width="75" alt="Women&#39;s Georgette Animal Print"></a></td>
+    <td class="image hidden-table"><a href="product-detail.html" title="Women&#39;s Georgette Animal Print" class="product-image"><img src="{% static 'frontend/products-images/p8.jpg' %}" width="75" alt="Women&#39;s Georgette Animal Print"></a></td>
     <td>
         <h2 class="product-name">
                     <a href="product-detail.html">Women's Georgette Animal Print</a>
@@ -99,7 +99,7 @@
 
 
 <tr class="odd">
-    <td class="image hidden-table"><a href="product-detail.html" title="Women&#39;s Georgette Animal Print" class="product-image"><img src="products-images/p3.jpg" width="75" alt="Women&#39;s Georgette Animal Print"></a></td>
+    <td class="image hidden-table"><a href="product-detail.html" title="Women&#39;s Georgette Animal Print" class="product-image"><img src="{% static 'frontend/products-images/p3.jpg' %}" width="75" alt="Women&#39;s Georgette Animal Print"></a></td>
     <td>
         <h2 class="product-name">
                     <a href="product-detail.html">Women's Georgette Animal Print</a>
@@ -138,7 +138,7 @@
 
 
 <tr class="odd">
-    <td class="image hidden-table"><a href="product-detail.html" title="Women&#39;s Georgette Animal Print" class="product-image"><img src="products-images/p1.jpg" width="75" alt="Women&#39;s Georgette Animal Print"></a></td>
+    <td class="image hidden-table"><a href="product-detail.html" title="Women&#39;s Georgette Animal Print" class="product-image"><img src="{% static 'frontend/products-images/p1.jpg' %}" width="75" alt="Women&#39;s Georgette Animal Print"></a></td>
     <td>
         <h2 class="product-name">
                     <a href="product-detail.html">Women's Georgette Animal Print</a>
@@ -175,7 +175,7 @@
 
 </tr>     
 <tr class="last">
-    <td class="image hidden-table"><a href="product-detail.html" title="Women&#39;s Georgette Animal Print" class="product-image"><img src="products-images/p9.jpg" width="75" alt="Women&#39;s Georgette Animal Print"></a></td>
+    <td class="image hidden-table"><a href="product-detail.html" title="Women&#39;s Georgette Animal Print" class="product-image"><img src="{% static 'frontend/products-images/p9.jpg' %}" width="75" alt="Women&#39;s Georgette Animal Print"></a></td>
     <td>
         <h2 class="product-name">
                     <a href="product-detail.html">Women's Georgette Animal Print</a>
@@ -345,7 +345,7 @@
           <ul>
             <li>
               <div class="feature-box">
-                <div class="icon-truck"><img src="images/world-icon.png" alt="Image"></div>
+                <div class="icon-truck"><img src="{% static 'frontend/images/world-icon.png' %}" alt="Image"></div>
                 <div class="content">
                   <h6>World's #1</h6>
                   <p>Largest Auto portal</p>
@@ -354,7 +354,7 @@
             </li>
             <li>
               <div class="feature-box">
-                <div class="icon-support"><img src="images/car-sold-icon.png" alt="Image"></div>
+                <div class="icon-support"><img src="{% static 'frontend/images/car-sold-icon.png' %}" alt="Image"></div>
                 <div class="content">
                   <h6>Car Sold</h6>
                   <p>Every 4 minute</p>
@@ -363,7 +363,7 @@
             </li>
             <li>
               <div class="feature-box">
-                <div class="icon-money"><img src="images/tag-icon.png" alt="Image"></div>
+                <div class="icon-money"><img src="{% static 'frontend/images/tag-icon.png' %}" alt="Image"></div>
                 <div class="content">
                   <h6>Offers</h6>
                   <p>Stay updated pay less</p>
@@ -372,7 +372,7 @@
             </li>
             <li class="last">
               <div class="feature-box">
-                <div class="icon-return"><img src="images/compare-icon.png" alt="Image"></div>
+                <div class="icon-return"><img src="{% static 'frontend/images/compare-icon.png' %}" alt="Image"></div>
                 <div class="content">
                   <h6>Compare</h6>
                   <p>Decode the right car</p>
@@ -487,7 +487,7 @@
           </div>
           <div class="col-sm-4 col-xs-12 coppyright"><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></div>
           <div class="col-xs-12 col-sm-4">
-            <div class="payment-accept"> <img src="images/payment-1.png" alt=""> <img src="images/payment-2.png" alt=""> <img src="images/payment-3.png" alt=""> <img src="images/payment-4.png" alt=""> </div>
+            <div class="payment-accept"> <img src="{% static 'frontend/images/payment-1.png' %}" alt=""> <img src="{% static 'frontend/images/payment-2.png' %}" alt=""> <img src="{% static 'frontend/images/payment-3.png' %}" alt=""> <img src="{% static 'frontend/images/payment-4.png' %}" alt=""> </div>
           </div>
         </div>
       </div>
@@ -671,15 +671,15 @@
    </ul>
 </div>
 <!-- JavaScript --> 
-<script type="text/javascript" src="js/jquery.min.js"></script> 
-<script type="text/javascript" src="js/bootstrap.min.js"></script> 
-<script type="text/javascript" src="js/parallax.js"></script> 
-<script type="text/javascript" src="js/revslider.js"></script> 
-<script type="text/javascript" src="js/common.js"></script> 
-<script type="text/javascript" src="js/jquery.bxslider.min.js"></script> 
-<script type="text/javascript" src="js/jquery.flexslider.js"></script> 
-<script type="text/javascript" src="js/owl.carousel.min.js"></script> 
-<script type="text/javascript" src="js/jquery.mobile-menu.min.js"></script>
+<script type="text/javascript" src="{% static 'frontend/js/jquery.min.js' %}"></script> 
+<script type="text/javascript" src="{% static 'frontend/js/bootstrap.min.js' %}"></script> 
+<script type="text/javascript" src="{% static 'frontend/js/parallax.js' %}"></script> 
+<script type="text/javascript" src="{% static 'frontend/js/revslider.js' %}"></script> 
+<script type="text/javascript" src="{% static 'frontend/js/common.js' %}"></script> 
+<script type="text/javascript" src="{% static 'frontend/js/jquery.bxslider.min.js' %}"></script> 
+<script type="text/javascript" src="{% static 'frontend/js/jquery.flexslider.js' %}"></script> 
+<script type="text/javascript" src="{% static 'frontend/js/owl.carousel.min.js' %}"></script> 
+<script type="text/javascript" src="{% static 'frontend/js/jquery.mobile-menu.min.js' %}"></script>
 
 
 </body>

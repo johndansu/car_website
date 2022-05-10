@@ -1,7 +1,7 @@
 {% extends 'frontend/base.html' %}
 {% load static %}
 {% block title %}
- Blog
+ 
 {% endblock %}
 {% block content %}
  <div class="page-heading">
@@ -43,16 +43,16 @@
                   <div class="new-label new-top-left">Hot</div>
                   <div class="sale-label sale-top-left">-15%</div>
                   <div class="product-image">
-                    <div class="product-full"> <img id="product-zoom1" src="products-images/p46.jpg" data-zoom-image="products-images/p46.jpg" alt="product-image"/> </div>
+                    <div class="product-full"> <img id="product-zoom1" src="{% static 'frontend/products-images/p46.jpg' %}" data-zoom-image="{% static 'frontend/products-images/p46.jpg' %}" alt="product-image"/> </div>
                     <div class="more-views">
                       <div class="slider-items-products">
                         <div id="gallery_02" class="product-flexslider hidden-buttons product-img-thumb">
                           <div class="slider-items slider-width-col4 block-content">
-                            <div class="more-views-items"> <a href="#" data-image="products-images/p1.jpg" data-zoom-image="products-images/p1.jpg"> <img id="product-zoom0"  src="products-images/p1.jpg" alt="product-image"/> </a></div>
-                            <div class="more-views-items"> <a href="#" data-image="products-images/p2.jpg" data-zoom-image="products-images/p2.jpg"> <img id="product-zoom1"  src="products-images/p2.jpg" alt="product-image"/> </a></div>
-                            <div class="more-views-items"> <a href="#" data-image="products-images/p3.jpg" data-zoom-image="products-images/p3.jpg"> <img id="product-zoom2"  src="products-images/p3.jpg" alt="product-image"/> </a></div>
-                            <div class="more-views-items"> <a href="#" data-image="products-images/p4.jpg" data-zoom-image="products-images/p4.jpg"> <img id="product-zoom3"  src="products-images/p4.jpg" alt="product-image"/> </a> </div>
-                            <div class="more-views-items"> <a href="#" data-image="products-images/p5.jpg" data-zoom-image="products-images/p5.jpg"> <img id="product-zoom4"  src="products-images/p5.jpg" alt="product-image" /> </a></div>
+                            <div class="more-views-items"> <a href="#" data-image="{% static 'frontend/products-images/p1.jpg' %}" data-zoom-image="{% static 'frontend/products-images/p1.jpg' %}"> <img id="product-zoom0"  src="{% static 'frontend/products-images/p1.jpg' %}" alt="product-image"/> </a></div>
+                            <div class="more-views-items"> <a href="#" data-image="{% static 'frontend/products-images/p2.jpg' %}" data-zoom-image="{% static 'frontend/products-images/p2.jpg' %}"> <img id="product-zoom1"  src="{% static 'frontend/products-images/p2.jpg' %}" alt="product-image"/> </a></div>
+                            <div class="more-views-items"> <a href="#" data-image="{% static 'frontend/products-images/p3.jpg' %}" data-zoom-image="{% static 'frontend/products-images/p3.jpg' %}"> <img id="product-zoom2"  src="{% static 'frontend/products-images/p3.jpg' %}" alt="product-image"/> </a></div>
+                            <div class="more-views-items"> <a href="#" data-image="{% static 'frontend/products-images/p4.jpg' %}" data-zoom-image="{% static 'frontend/products-images/p4.jpg' %}"> <img id="product-zoom3"  src="{% static 'frontend/products-images/p4.jpg' %}" alt="product-image"/> </a> </div>
+                            <div class="more-views-items"> <a href="#" data-image="{% static 'frontend/products-images/p5.jpg' %}" data-zoom-image="{% static 'frontend/products-images/p5.jpg' %}"> <img id="product-zoom4"  src="{% static 'frontend/products-images/p5.jpg' %}" alt="product-image" /> </a></div>
                           </div>
                         </div>
                       </div>
@@ -229,7 +229,7 @@
                     <h2 class="woocommerce-Reviews-title">2 reviews for <span>Bacca Bucci Men's Running Shoes</span></h2>
                     <ol class="commentlist">
                       <li class="comment">
-                        <div> <img alt="" src="images/member1.png" class="avatar avatar-60 photo">
+                        <div> <img alt="" src="{% static 'frontend/images/member1.png' %}" class="avatar avatar-60 photo">
                           <div class="comment-text">
                             <div class="ratings">
                               <div class="rating-box">
@@ -246,7 +246,7 @@
                       </li>
                       <!-- #comment-## -->
                       <li class="comment">
-                        <div> <img alt="" src="images/member2.png" class="avatar avatar-60 photo">
+                        <div> <img alt="" src="{% static 'frontend/images/member2.png' %}" class="avatar avatar-60 photo">
                           <div class="comment-text">
                             <div class="ratings">
                               <div class="rating-box">
@@ -364,7 +364,7 @@
                     <div class="item">
                       <div class="item-inner">
                         <div class="item-img">
-                          <div class="item-img-info"><a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="products-images/p36.jpg" alt="Retis lapen casen"></a>
+                          <div class="item-img-info"><a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="{% static 'frontend/products-images/p36.jpg' %}" alt="Retis lapen casen"></a>
                             <div class="new-label new-top-left">Used</div>
                             <div class="sale-label sale-top-left">-15%</div>
                             <div class="item-box-hover">
@@ -408,7 +408,7 @@
                     <div class="item">
                       <div class="item-inner">
                         <div class="item-img">
-                          <div class="item-img-info"><a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="products-images/p35.jpg" alt="Retis lapen casen"></a>
+                          <div class="item-img-info"><a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="{% static 'frontend/products-images/p35.jpg' %}" alt="Retis lapen casen"></a>
                             <div class="item-box-hover">
                               <div class="box-inner">
                                 <div class="add_cart">
@@ -451,7 +451,7 @@
                     <div class="item">
                       <div class="item-inner">
                         <div class="item-img">
-                          <div class="item-img-info"> <a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="products-images/p34.jpg" alt="Retis lapen casen"></a>
+                          <div class="item-img-info"> <a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="{% static 'frontend/products-images/p34.jpg' %}" alt="Retis lapen casen"></a>
                             <div class="item-box-hover">
                               <div class="box-inner">
                                 <div class="add_cart">
@@ -493,7 +493,7 @@
                     <div class="item">
                       <div class="item-inner">
                         <div class="item-img">
-                          <div class="item-img-info"><a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="products-images/p33.jpg" alt="Retis lapen casen"></a>
+                          <div class="item-img-info"><a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="{% static 'frontend/products-images/p33.jpg' %}" alt="Retis lapen casen"></a>
                             <div class="item-box-hover">
                               <div class="box-inner">
                                 <div class="add_cart">
@@ -535,7 +535,7 @@
                     <div class="item">
                       <div class="item-inner">
                         <div class="item-img">
-                          <div class="item-img-info"><a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="products-images/p31.jpg" alt="Retis lapen casen"></a>
+                          <div class="item-img-info"><a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="{% static 'frontend/products-images/p31.jpg' %}" alt="Retis lapen casen"></a>
                             <div class="new-label new-top-left">New</div>
                             <div class="item-box-hover">
                               <div class="box-inner">
@@ -579,7 +579,7 @@
                     <div class="item">
                       <div class="item-inner">
                         <div class="item-img">
-                          <div class="item-img-info"><a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="products-images/p32.jpg" alt="Retis lapen casen"></a>
+                          <div class="item-img-info"><a href="product-detail.html" title="Retis lapen casen" class="product-image"><img src="{% static 'frontend/products-images/p32.jpg' %}" alt="Retis lapen casen"></a>
                             <div class="new-label new-top-left">New</div>
                             <div class="item-box-hover">
                               <div class="box-inner">

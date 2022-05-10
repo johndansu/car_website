@@ -13,3 +13,20 @@ def about(request):
 
 def car(request):
     return render(request, 'frontend/car-detail.html')
+
+def login(request):
+    return render(request, 'frontend/login.html')
+
+def contact(request):
+    return render(request, 'frontend/contact-us.html')
+
+def dashboard(request):
+    return render(request, 'frontend/dashboard.html')
+
+def wishlist(request):
+    return render(request, 'frontend/wishlist.html')
+
+def cart(request):
+    return render(request, 'frontend/shopping-cart.html')
+
+
