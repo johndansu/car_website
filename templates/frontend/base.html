@@ -56,54 +56,16 @@
                 <div class="fl-links">
                   <div class="no-js"> <a title="" class="clicker"></a>
                     <div class="fl-nav-links">
+                      {% url 'frontend:login' as Login %}
                        <h3>My Account</h3>
                       <ul class="links">
-                        <li><a href="login.html" title="My Account">Login</a></li>
-                        <li><a href="login.html" title="Wishlist">Register</a></li>
+                        {% if request.path == Login %} class="active" {% endif %}><a href="{% url 'frontend:login' %}"><li><span> Login </span></a></li>
+                        {% if request.path == Login %} class="active" {% endif %}><a href="{% url 'frontend:login' %}"><li><span> Register </span></a></li>
                         </ul>
                     </div>
                   </div>
                 </div>
-                <div class="fl-cart-contain">
-                  <div class="mini-cart">
-                    <div class="basket"> <a href="shopping-cart.html"><span> 2 </span></a> </div>
-                    <div class="fl-mini-cart-content" style="display: none;">
-                      <div class="block-subtitle">
-                        <div class="top-subtotal">2 items, <span class="price">$259.99</span> </div>
-                        <!--top-subtotal--> 
-                        <!--pull-right--> 
-                      </div>
-                      <!--block-subtitle-->
-                      <ul class="mini-products-list" id="cart-sidebar">
-                        <li class="item first">
-                          <div class="item-inner"><a class="product-image" title="timi &amp; leslie Sophia Diaper Bag, Lemon Yellow/Shadow White" href="#l"><img alt="timi &amp; leslie Sophia Diaper Bag, Lemon Yellow/Shadow White" src="products-images/p4.jpg"></a>
-                            <div class="product-details">
-                              <div class="access"><a class="btn-remove1" title="Remove This Item" href="#">Remove</a> <a class="btn-edit" title="Edit item" href="#"><i class="icon-pencil"></i><span class="hidden">Edit item</span></a> </div>
-                              <!--access--> 
-                              <strong>1</strong> x <span class="price">$179.99</span>
-                              <p class="product-name"><a href="accessories-detail.html">timi &amp; leslie Sophia Diaper Bag...</a></p>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="item last">
-                          <div class="item-inner"><a class="product-image" title="JP Lizzy Satchel Designer Diaper Bag - Slate Citron" href="#"><img alt="JP Lizzy Satchel Designer Diaper Bag - Slate Citron" src="products-images/p3.jpg"></a>
-                            <div class="product-details">
-                              <div class="access"><a class="btn-remove1" title="Remove This Item" href="#">Remove</a> <a class="btn-edit" title="Edit item" href="#"><i class="icon-pencil"></i><span class="hidden">Edit item</span></a> </div>
-                              <!--access--> 
-                              <strong>1</strong> x <span class="price">$80.00</span>
-                              <p class="product-name"><a href="accessories-detail.html">JP Lizzy Satchel Designer Diaper Ba...</a></p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                      <div class="actions">
-                        <button class="btn-checkout" title="Checkout" type="button" onClick="window.location=checkout.html"><span>Checkout</span></button>
-                      </div>
-                      <!--actions--> 
-                    </div>
-                    <!--fl-mini-cart-content--> 
-                  </div>
-                </div>
+
                 <!--mini-cart-->
                 <div class="collapse navbar-collapse">
                   <form class="navbar-form" role="search">

@@ -26,4 +26,8 @@ def contact(request):
 def blog(request):
     return render(request, 'frontend/blog.html')
 
+def login(request):
+    return render(request, 'frontend/login.html')
 
+def cart(request):
+    return render(request, 'frontend/shopping-cart.html')
