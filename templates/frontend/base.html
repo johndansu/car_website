@@ -56,11 +56,12 @@
                 <div class="fl-links">
                   <div class="no-js"> <a title="" class="clicker"></a>
                     <div class="fl-nav-links">
-                      {% url 'frontend:login' as Login %}
+                      {% url 'login' as Login %}
+                      {% url 'backend:register' as Register %}
                        <h3>My Account</h3>
                       <ul class="links">
-                        {% if request.path == Login %} class="active" {% endif %}><a href="{% url 'frontend:login' %}"><li><span> Login </span></a></li>
-                        {% if request.path == Login %} class="active" {% endif %}><a href="{% url 'frontend:login' %}"><li><span> Register </span></a></li>
+                        <li {% if request.path == Login %} class="active" {% endif %}><a href="{% url 'login' %}"><span> Login </span></a></li>
+                        <li {% if request.path == Register %} class="active" {% endif %}><a href="{% url 'backend:register' %}"><span> Register </span></a></li>
                         </ul>
                     </div>
                   </div>
@@ -86,7 +87,6 @@
                   <div class="nav-inner">
                       {% url 'index' as Home %}
                       {% url 'frontend:about' as About %}
-                      {% url 'frontend:compare' as Compare  %}
                       {% url 'frontend:foreign' as Foreign %}
                       {% url 'frontend:foreign' as Nigerian %}
                       {% url 'frontend:contact' as Contact %}
@@ -97,7 +97,6 @@
                       <li {% if request.path == Foreign %} class="active" {% endif %}><a href="{% url 'frontend:foreign' %}"><span>Foreign Cars</span></a></li>
                       <li {% if request.path == Nigerian %} class="active" {% endif %}><a href="{% url 'frontend:nigerian' %}"><span>Local Cars</span></a></li>
                       <li {% if request.path == Contact %} class="active" {% endif %}><a href="{% url 'frontend:contact' %}"><span>Contact</span></a></li>
-                      <li {% if request.path == Compare %} class="active" {% endif %}><a href="{% url 'frontend:compare' %}"><span>Compare Cars‎</span></a></li>
 
                       
                     </ul>
@@ -424,29 +423,7 @@
           <li class="level1 nav-10-2"> <a href="blog-detail.html"> <span>Blog Detail</span> </a> </li>
         </ul>
     </li>
-    <li><a href="compare.html">Compare Cars‎</a></li>
-    <li><a href="#">Pages</a>
-       <ul class="level1">
-                          <li class="level1"> <a href="about-us.html"> <span>About us</span> </a> </li>
-                          <li class="level1 nav-10-4"> <a href="shopping-cart.html"> <span>Cart Page</span> </a> </li>
-                          <li class="level1 first parent"><a href="checkout.html"><span>Checkout</span></a> 
-                            <!--sub sub category-->
-                            <ul class="level2 right-sub">
-                              <li class="level2 nav-2-1-1 first"><a href="checkout-method.html"><span>Method</span></a></li>
-                              <li class="level2 nav-2-1-5 last"><a href="checkout-billing-info.html"><span>Billing Info</span></a></li>
-                            </ul>
-                            <!--sub sub category--> 
-                          </li>
-                          <li class="level1 nav-10-4"> <a href="wishlist.html"> <span>Wishlist</span> </a> </li>
-                          <li class="level1"> <a href="dashboard.html"> <span>Dashboard</span> </a> </li>
-                          <li class="level1"> <a href="multiple-addresses.html"> <span>Multiple Addresses</span> </a> </li>
-                          <li class="level1"><a href="contact-us.html"><span>Contact us</span></a> </li>
-                          <li class="level1"><a href="404error.html"><span>404 Error Page</span></a> </li>
-                          <li class="level1"><a href="login.html"><span>Login Page</span></a> </li>
-                          <li class="level1"><a href="quickview.html"><span>Quick View</span></a> </li>
-                          <li class="level1"><a href="newsletter.html"><span>Newsletter</span></a> </li>
-                        </ul>
-    </li>
+    
     <li><a href="#">Custom</a></li>
    </ul>
 </div>

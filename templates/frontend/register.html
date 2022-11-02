@@ -1,0 +1,50 @@
+{% extends 'frontend/base.html' %}
+{% block title %}
+Register
+{% endblock %}
+
+{% block content %}
+
+<div class="page-heading">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="page-title">
+          <h2>Register</h2>
+        </div>
+      </div>
+      <!--col-xs-12-->
+    </div>
+    <!--row-->
+  </div>
+  <!--container-->
+</div>
+
+
+<section id="content">
+  <div class="row">
+    <div class="col-sm-9 text-center" id="mainContent">
+        {% if messages %}
+            {% for mes in messages %}
+                <div class="alert alert-success">{{ mes }}</div>
+            {% endfor %}
+        {% endif %}
+
+        {% if reg.errors %}
+          {% for r in reg.errors %}
+            <div class="alert alert-danger">{{ r }}</div>
+          {% endfor %} 
+        {% endif %}
+      <div class="row">
+        <div class="col-sm-12">
+          <form class="form" method="post">
+               {{ reg }}
+            <input type="submit" class="btn btn-primary" value="Register">
+            {% csrf_token %}
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+{% endblock %}

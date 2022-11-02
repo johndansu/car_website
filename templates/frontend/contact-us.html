@@ -23,7 +23,12 @@ Contact Us Page
     <div class="row">
       <div class="col-main col-sm-9 wow bounceInUp animated animated" style="visibility: visible;">
         <div id="messages_product_view"></div>
-        <form action="#" id="contactForm" method="post">
+        <form class'form' id="contactForm" method"post">
+          {% if messages %}
+            {% for mes in messages %}
+              <div class="alert{{ mes.tags }} ">{{ mes }}</div>
+            {% endfor %}
+          {% endif %}
           <div class="static-contain">
             <fieldset class="group-select">
               <ul>
@@ -35,41 +40,33 @@ Contact Us Page
                           <div class="input-box name-firstname">
                             <label for="name"><em class="required">*</em>Name</label>
                             <br>
-                            <input name="name" id="name" title="Name" value="john doe" class="input-text required-entry"
+                            <input name="name" id="name" title="Name" class="input-text required-entry"
                               type="text">
                           </div>
                           <div class="input-box name-firstname">
                             <label for="email"><em class="required">*</em>Email</label>
                             <br>
-                            <input name="email" id="email" title="Email" value="john.doe@gmail.com"
-                              class="input-text required-entry validate-email" type="text">
+                            <input name="email" id="email" title="Email" 
+                              class="input-text required-entry validate-email" type="email">
                           </div>
                         </div>
                       </li>
                       <li>
-                        <label for="telephone">Telephone</label>
+                        <label for="phone">Phone</label>
                         <br>
-                        <input name="telephone" id="telephone" title="Telephone" value="" class="input-text"
+                        <input name="phone" id="phone" title="phone"  class="telephone"
                           type="text">
-                      </li>
-                      <li>
-                        <label for="comment"><em class="required">*</em>Comment</label>
-                        <br>
-                        <textarea name="comment" id="comment" title="Comment" class="required-entry input-text" cols="5"
-                          rows="3"></textarea>
                       </li>
                     </ul>
                   </fieldset>
                 </li>
-                <p class="require"><em class="required">* </em>Required Fields</p>
-                <input type="text" name="hideit" id="hideit" value="" style="display:none !important;">
                 <div class="buttons-set">
                   <button type="submit" title="Submit" class="button submit"><span><span>Submit</span></span></button>
                 </div>
               </ul>
             </fieldset>
           </div>
-          {% csrf_token %}
+          {% csrf_token %} 
         </form>
 
       </div>
